@@ -1,1 +1,2 @@
 # WeWantWeb
+Début du projet
