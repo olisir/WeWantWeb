@@ -1,0 +1,1019 @@
+body {
+	background-color: #F7F7F7;
+}
+
+.container {
+	margin-left: 5%;
+	margin-right: 5%;
+}
+
+.container_fiche_produit a {
+	text-decoration: none;
+}
+
+.nom_hebergement {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	text-align:center;
+}
+
+h1 {
+	font-family: "Oranienbaum";
+	color: #008080;
+	font-size: 40px;
+	text-align: center;
+}
+
+h2 {
+	font-family: "Helvetica";
+	color: #F4661B;
+	font-size: 25px;
+	text-align: center;
+}
+
+h3 {
+	font-family: "Helvetica";
+	font-size: 20px;
+	color: #474E55;
+} 
+
+p {
+	font-family: "helvetica";
+	font-size: 16px;
+	font-weight: 200;
+	color: #474E55;
+}
+
+.bouton_demande_reservation, .bouton_voir_profil, .bouton_page_erreur, .confirm, .bouton_contact_hote  {
+	background-color: #F4661B;
+	color: #ffffff;
+	height: 35px;
+	min-width: 150px;
+	border: none;
+}
+
+button:hover {
+	background-color: #E67E30;
+}
+
+.infos_hebergement_left {
+	width: 70%;
+	float: left;
+	padding-right: 5px;
+}
+
+.infos_hebergement_right {
+	width: 30%;
+	float: left;
+	padding-left: 5px;
+}
+
+.photos_hebergement_galerie {
+	width: 100%;
+	height: 200px;
+	margin-bottom: 30px;
+	box-shadow: 3px 3px 2px #ccc;
+}
+
+.gallery {
+	width: 25%;
+	float: left;
+}
+
+.gallery img {
+	border: 1px solid #ccc;
+	width: 100%;
+	height: 200px;
+}
+
+.description_hebergement {
+	margin-top:15px;
+}
+
+.caract-list-1, .caract-list-2, .caract-list-3 {
+	width: 33%;
+	float: left;
+}
+
+.presentation_hote {
+	clear: both;
+	padding-top: 30px;
+	margin-bottom: 40px;
+}
+
+.choix_reservation {
+	padding: 10px;
+}
+
+ .ui.calendar{
+ 	float: left;
+ 	width :50%;
+ 	margin-bottom: 20px;
+ }
+
+.resa_right {
+	text-align: right;
+}
+
+.activites {
+	margin-top: 25px;
+	margin-bottom: 40px; 
+	height: 186px;
+}
+
+.activites img {
+	width: 100%;
+	height: 195px;
+	border: 1px solid #ccc;
+}
+
+.w3-button.w3-black.w3-display-left,
+.w3-button.w3-black.w3-display-right {
+  cursor: pointer;
+  position: absolute;
+  top: 100%;
+  width: auto;
+  padding: 16px;
+  margin-top: 120px;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.w3-button.w3-black.w3-display-right {
+  right: 67px;
+  border-radius: 3px 0 0 3px;
+}
+
+.avis_utilisateurs_fiche_produit {
+	clear: both;
+}
+
+.hebergements_similaires img {
+	width: 22%;
+	height: 200px;
+	margin: 0 10px 0 10px;
+	border: 1px solid #ccc;
+}
+
+.subtitle_description {
+	font-family: "Helvetica bold";
+	font-size: 20px;
+	color:#008080;
+	margin-bottom: 0px;
+}
+
+ul {
+	margin : 0px;
+}
+
+li {
+	list-style-type: none;
+	font-family: "helvetica";
+	font-size: 16px;
+	font-weight: 200;
+	color: #474E55;
+}
+
+.titre_article_cgv {
+	font-family: "helvetica";
+	color: #474E55;
+}
+
+.adresse_postale {
+	font-family: "helvetica";
+	font-size: 18px;
+	font-weight: bold;
+	color: #474E55;
+	text-align: justify;
+}
+
+.mention_importante {
+	border: 1px solid #ccc;
+}
+
+.green_link {
+	color: #579517;
+}
+
+.sujet_left {
+	width: 47%;
+	float: left;
+	padding: 0 15px 0 15px;
+	border-right: 2px solid #ccc
+}
+
+.sujet_right {
+	width: 47%;
+	float: left;
+	padding: 0 15px 0 15px;
+}
+
+.reponse {
+	display: none;
+}
+
+.question:hover ~ .reponse {
+	display: block;
+}
+
+.sujet_1, .sujet_2, .sujet_3, .sujet_4, .sujet_5, .sujet_6, .sujet_7, .sujet_8, .sujet_9, .sujet_10, .sujet_11, .sujet_12 {
+	border-bottom: 1px solid #ccc; 
+}
+
+.sujet_reductions { 
+margin-top: 80px; 
+}
+
+.sujet_profil_hote {
+	margin-top: 80px;
+}
+
+.titre_article_mentions_legales {
+	font-family: "helvetica";
+	color: #474E55;
+}
+
+.image_mascotte {
+	width: 25%; 
+	float: left;
+}
+
+.texte_page_erreur {
+	width: 75%;
+	float: left;
+	margin-top: 60px;
+}
+
+.boutons_page_erreur {
+	float: left;
+	margin-top: 57px;
+}
+
+.bouton_redirection {
+	background-color: #F4661B;
+	color: #FFFFFF;
+	height: 35px;
+	min-width: 150px;
+	font-family: "helvetica";
+	margin-right: 70px;
+	border: none;
+}
+
+.formulaire_paiement {
+	float: left;
+	width: 69%;
+}
+
+.reservation_details_right {
+	float: left;
+	width: 30%; 
+	padding-left: 7px;
+	border: 1px solid #ccc;
+}
+
+.reservation_details_right div {
+	margin-bottom: 20px;
+}
+
+.block_details_2, .block_details_3, .block_details_4 {
+	border-bottom: 1px solid #ccc;
+	padding-bottom: 10px;
+}
+
+.option_reservation {
+	font-family: "helvetica";
+	font-size: 16px;
+	font-weight: 200;
+	color: #474E55;
+	margin:0px;
+}
+
+.apercu_logement {
+	width: 60%;
+	float: left;
+}
+
+.infos_details_block_2 {
+	float: left;
+	width: 40%;
+}
+
+.apercu_logement {
+	float: left;
+    width: 60%;
+    margin-left: 0px;
+}
+
+.apercu_logement img {
+	width: 200px;
+	height: 150px;
+}
+
+.photo_profil_hote {
+	float: left;
+	width: 20%;
+}
+
+.photo-hote {
+	border-radius: 50%;
+	width: 200px;
+	height: 200px;
+}
+
+.informations_profil_hote {
+	float: left;
+	width: 80%;
+}
+
+.presentation_profil_hote {
+	float: right;
+	width: 80%;
+}
+
+.bouton-contact {
+	text-align: center;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+.hebergements_profil_hote {
+	float: right;
+	width: 80%;
+}
+
+.hebergements_profil_hote img {
+	width: 200px;
+	height: 200px;
+	float: left;
+	margin-left: 30px;
+}
+
+.commentaires_profil_hote {
+	float: right;
+	width: 80%;
+}
+
+.reglement_details_left {
+float: left; 
+width: 69%;
+height: 680px;
+}
+
+.les_details {
+	height: 50%;
+	padding-right: 30px;
+}
+
+.reglement_interieur {
+	height: 50%;
+	padding-right: 30px;
+}
+
+.reglement_details_left {
+	float: left;
+	width: 30%; 
+	padding-left: 7px;
+	border: 1px solid #ccc;
+}
+
+.reglement_details_right div {
+	margin-bottom: 20px;
+}
+
+.confirmation_reservation {
+	clear: both;
+}
+
+.accepter_reglement {
+	font-family: "helvetica";
+	font-size: 16px;
+	font-weight: 200;
+	color: #474E55;
+	margin-bottom: 5px;
+}
+
+.footer_links a {
+	text-decoration: none;
+	font-family: Helvetica; 
+	font-size: 14px;
+	color: #579517;
+}
+
+.liens_footer {
+	list-style-type: none;
+	float: left;
+	margin-left: 40px;
+	min-width: 20%;
+}
+
+.footer_links li {
+	margin-top: 10px;
+}
+
+.footer_links a:hover {
+	text-decoration: underline;
+}
+
+.footer-segment-1, .footer-segment-2 {
+	max-width: 60%;
+	margin: auto;
+}
+
+.footer-segment-1 .footer_links {
+	height: 80px;
+	margin-bottom: -16px;
+}
+
+.social_media_icons {
+	text-align: center;
+}
+
+.footer-segment-2 .social_media_icons {
+	width: 99%
+}
+
+.links_left, .links_right {
+	width: 100%;
+}
+
+.icon_left, .icon_right {
+	width: 100%;
+}
+
+.facebook_icon, .twitter_icon, .instagram_icon, .pinterest_icon {
+	width: 25%;
+	float: left;
+
+}
+
+.header_sticky {
+	width:99%;
+	height:80px;
+	background-color: #FFFFFF;
+	box-shadow: 2px 2px 2px #C0C0C0;
+	position: fixed; 
+	z-index: 1000000; 
+	top: 0; 
+	left:0; 
+	right:0;
+	margin: 0px;
+}
+
+nav, .home_button, .espace_user, .languages {
+	float:left;
+	width: 25%;
+}
+
+nav .ul {
+	font-size: 16px; 
+	font-family: helvetica;
+	color: #474E55;
+	background-color: #FFFFFF;
+	text-align: left;
+}
+
+.menu_burger {
+    position: relative;
+    display: inline-block;
+    margin-left: 50px;
+    margin-top: 15px;
+}
+
+.dropdown_menu {
+    display: none;
+    position: absolute;
+    background-color: #FFFFFF;
+    min-width: 350px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+}
+
+.menu_burger:hover .dropdown_menu {
+    display: block;
+}
+
+.dropdown_menu a {
+	text-decoration: none;
+	color: #474E55;
+}
+
+.dropdown_menu li {
+	padding-top: 10px;
+}
+
+.menu_burger a:hover {
+	color: #579517;
+	font-size: 18px;
+}
+
+.espace_user a {
+	text-decoration: none;
+	color :#474E55;
+}
+
+.espace_user a:hover {
+	color: #579517;
+	font-size: 17px;
+}
+
+.home_button, .espace_user {
+	text-align: right;
+	padding-top: 10px;
+}
+
+.languages img {
+	padding-left: 75px;
+	padding-top: 28px;
+}
+
+@media all and (min-width:1200px) and (max-width:1600px) {
+
+}
+
+@media all and (min-width:740px) and (max-width:1199px) {
+	.container {
+		display: block;
+		margin : 20px;
+	}
+
+	.infos_hebergement_left {
+		width: 60%;
+	}
+
+	.infos_hebergement_right {
+		width: 40%;
+	}
+
+	.image {
+		display: none;
+	}
+
+	.gallery {
+		width: 100%;
+	}	
+
+	.ui.calendar {
+		width: 100%;
+		text-align: center;
+	}
+
+	.ui.input.left.icon {
+		width: 100%; 
+		text-align: center;
+	}
+
+	.resa_right {
+		text-align: center;
+	}
+
+	.image-hebergement-1 {
+		width: 100%;
+	}
+
+	.image-hebergement {
+		display: none;
+	}
+
+	.w3-button.w3-black.w3-display-left {
+		cursor: pointer;
+		position: absolute;
+		top: 72%;
+		width: auto;
+		padding: 12px;
+		margin-top: -50px;
+		font-weight: bold;
+		font-size: 20px;
+		border-radius: 0 3px 3px 0;
+		user-select: none;
+-webkit-user-select: none;
+	}
+
+	.w3-button.w3-black.w3-display-right {
+		left: 94%;
+		cursor: pointer;
+		position: absolute;
+		top: 72%;
+		width: auto;
+		padding: 12px;
+		margin-top: -50px;
+		font-weight: bold;
+		font-size: 20px;
+		border-radius: 0 3px 3px 0;
+		user-select: none;
+		-webkit-user-select: none;
+	}
+
+	.subtitle_description {
+	font-family: "Helvetica bold";
+	font-size: 16px;
+	color:#008080;
+	margin-bottom: 0px;
+	text-align: left;
+}
+
+	.caract-list-1 ul {
+		padding-left: 0px;
+	}
+
+	.caract-list-2 ul {
+		padding-left: 0px;
+	}
+
+	.caract-list-3 ul {
+		padding-left: 0px;
+	}
+
+	.ui.input.left.icon {
+		width: 100%;
+	}
+
+	.hebergements_similaires img {
+		width: 150px;
+		height: 150px;
+	}
+
+	.sujet_paiement {
+		margin-top: 80px;
+	}
+
+	.sujet_left {
+	width: 47%;
+	float: left;
+	padding: 0 15px 0 15px;
+	border-right: none;
+	}
+
+	.photo_profil_hote {
+		width: 30%;
+	}
+	.informations_profil_hote, .presentation_profil_hote, .hebergements_profil_hote {
+		width: 70%;
+	}
+
+	h1 {
+		font-size: 35px;
+	}
+
+	h2 {
+		font-size: 30px;
+	}
+
+	.photo-hote {
+		width: 150px;
+		height: 150px;
+	}
+
+	.hebergements_profil_hote img {
+		width: 150px;
+		height: 150px;
+	}
+
+	.reglement_details_right {
+		clear: both;
+		width: 100%;
+	}
+
+	.reservation_details_left{
+		width: 100%;
+	}
+	
+}
+
+@media all and (min-width:480px) and (max-width:739px) {
+	.header_sticky {
+		display: block;
+		width: 100%;
+		margin: 0px;
+	}
+
+	nav {
+		width: 33%;
+	}
+
+	.espace_user a {
+		display: none;
+	}
+
+	.languages {
+		width: 33%
+	}
+
+	.languages img {
+		padding-left: 73px;
+		padding-top: 0px;
+	}
+
+	.home_button {
+		width: 33%;
+	}
+
+	.home_button img {
+		width: 200px;
+	}
+}
+
+	.container {
+		display: block;
+		margin : 10px;
+	}
+
+	.infos_hebergement_left {
+		width: 100%;
+	}
+
+	.infos_hebergement_right {
+		width: 100%;
+	}
+
+	.image {
+		display: none;
+	}
+
+	.image-hebergement-1 {
+		width: 100%;
+	}
+
+	.gallery {
+		width: 100%;
+	}
+
+	.ui.calendar {
+		width: 50%;
+	}
+
+	.caract-list-1 ul {
+		padding-left: 0px;
+	}
+
+	.caract-list-2 ul {
+		padding-left: 0px;
+	}
+
+	.caract-list-3 ul {
+		padding-left: 0px;
+	}
+
+	.ui.input.left.icon {
+		width: 200px;
+	}
+
+	.w3-button.w3-black.w3-display-left {
+		cursor: pointer;
+		position: absolute;
+		top: 100%;
+		width: auto;
+		padding: 12px;
+		margin-top: 917px;
+		font-weight: bold;
+		font-size: 20px;
+		border-radius: 0 3px 3px 0;
+		user-select: none;
+-webkit-user-select: none;
+	}
+
+	.w3-button.w3-black.w3-display-right {
+		left: 90%;
+		cursor: pointer;
+		position: absolute;
+		top: 100%;
+		width: auto;
+		padding: 12px;
+		margin-top: 917px;
+		font-weight: bold;
+		font-size: 20px;
+		border-radius: 0 3px 3px 0;
+		user-select: none;
+		-webkit-user-select: none;
+	}
+
+	.hebergements_similaires img {
+		width: 80%;
+	}
+
+	.sujet_paiement {
+		margin-top: 80px;
+	}
+
+	.sujet_left {
+	width: 47%;
+	float: left;
+	padding: 0 15px 0 15px;
+	border-right: none;
+	}
+
+	.photo_profil_hote {
+		width: 30%;
+	}
+	.informations_profil_hote, .presentation_profil_hote, .hebergements_profil_hote {
+		width: 70%;
+	}
+
+	.photo-hote {
+		width: 100px;
+		height: 100px;
+	}
+
+	.hebergements_profil_hote img {
+		width: 100px;
+		height: 100px;
+	}
+
+	h1 {
+		font-size: 30px;
+	}
+
+	h2 {
+		font-size: 25px;
+	}
+
+	.reglement_details_right {
+		clear: both;
+		width: 100%;
+	}
+
+	.reglement_details_left{
+		width: 100%;
+	}
+
+}
+
+@media all and (min-width:200px) and (max-width:479px) {
+	.header_sticky {
+		display: block;
+		width: 100%;
+		margin: 0px;
+	}
+
+	nav {
+		width: 33%;
+	}
+
+	.espace_user a {
+		display: none;
+	}
+
+	.languages {
+		width: 33%
+	}
+
+	.languages img {
+		padding-left: 40px;
+		padding-top: 0px;
+	}
+
+	.home_button {
+		width: 33%;
+	}
+
+	.menu_burger {
+		margin-left: 25px;
+	}
+
+	.container {
+		display: block;
+		margin : 10px;
+	}
+
+	.infos_hebergement_left {
+		width: 100%;
+	}
+
+	.infos_hebergement_right {
+		width: 100%;
+	}
+
+	.image {
+		display: none;
+	}
+
+	.image-hebergement-1 {
+		width: 100%;
+	}
+
+	.gallery {
+		width: 100%;
+	}
+
+	.caract-list-1 {
+		width: 100%;
+		margin-top: 10px;
+	}
+
+	.caract-list-2 {
+		width: 100%;
+		margin-top: 10px;
+	}
+
+	.caract-list-3 {
+		width: 100%;
+		margin-top: 10px;
+	}
+
+	.caract-list-1 ul {
+		padding-left: 0px;
+	}
+
+	.caract-list-2 ul {
+		padding-left: 0px;
+	}
+
+	.caract-list-3 ul {
+		padding-left: 0px;
+	}
+	
+	.ui.calendar {
+		width: 100%;
+		text-align: center;
+	}
+
+	.ui.input.left.icon {
+		width: 200px;
+	}
+
+	.occupation {
+		text-align: center;
+	}
+
+	.resa_right {
+		text-align: center;
+	}
+
+	.hebergements_similaires img {
+		width: 100%;
+		height: 150px;
+	}
+
+	.w3-button.w3-black.w3-display-left {
+		cursor: pointer;
+		position: absolute;
+		top: 100%;
+		width: auto;
+		padding: 12px;
+		margin-top: 1533px;
+		font-weight: bold;
+		font-size: 20px;
+		border-radius: 0 3px 3px 0;
+		user-select: none;
+-webkit-user-select: none;
+	}
+
+	.w3-button.w3-black.w3-display-right {
+		left: 85%;
+		cursor: pointer;
+		position: absolute;
+		top: 100%;
+		width: auto;
+		padding: 12px;
+		margin-top: 1533px;
+		font-weight: bold;
+		font-size: 20px;
+		border-radius: 0 3px 3px 0;
+		user-select: none;
+		-webkit-user-select: none;
+	}
+
+	.sujet_paiement {
+		margin-top: 80px;
+	}
+	
+	.sujet_left {
+	width: 47%;
+	float: left;
+	padding: 0 15px 0 15px;
+	border-right: none;
+	}
+
+	.photo_profil_hote {
+		width: 100%;
+		text-align: center;
+	}
+	.informations_profil_hote, .presentation_profil_hote, .hebergements_profil_hote {
+		width: 100%;
+	}
+
+	.hebergements_profil_hote img {
+		width: 150px;
+		height: 150px;
+	}
+	h1 {
+		font-size: 25px;
+	}
+
+	h2 {
+		font-size: 20px;
+	}
+
+	.reglement_details_right {
+		clear: both;
+		width: 100%;
+	}
+
+	.reglement_details_left{
+		width: 100%;
+	}
+
+}
