@@ -7,14 +7,9 @@ body {
 	margin-right: 5%;
 }
 
-.container_fiche_produit a {
-	text-decoration: none;
-}
-
 .nom_hebergement {
 	margin-top: 10px;
 	margin-bottom: 10px;
-	text-align:center;
 }
 
 h1 {
@@ -44,9 +39,9 @@ p {
 	color: #474E55;
 }
 
-.bouton_demande_reservation, .bouton_voir_profil, .bouton_page_erreur, .confirm, .bouton_contact_hote  {
+.bouton {
 	background-color: #F4661B;
-	color: #ffffff;
+	color: #FFFFFF;
 	height: 35px;
 	min-width: 150px;
 	border: none;
@@ -56,19 +51,31 @@ button:hover {
 	background-color: #E67E30;
 }
 
-.infos_hebergement_left {
+ul {
+	margin : 0px;
+}
+
+li {
+	list-style-type: none;
+	font-family: "helvetica";
+	font-size: 16px;
+	font-weight: 200;
+	color: #474E55;
+}
+
+.infos_left {
 	width: 70%;
 	float: left;
 	padding-right: 5px;
 }
 
-.infos_hebergement_right {
+.infos_right {
 	width: 30%;
 	float: left;
 	padding-left: 5px;
 }
 
-.photos_hebergement_galerie {
+.photos {
 	width: 100%;
 	height: 200px;
 	margin-bottom: 30px;
@@ -86,10 +93,6 @@ button:hover {
 	height: 200px;
 }
 
-.description_hebergement {
-	margin-top:15px;
-}
-
 .caract-list-1, .caract-list-2, .caract-list-3 {
 	width: 33%;
 	float: left;
@@ -101,7 +104,7 @@ button:hover {
 	margin-bottom: 40px;
 }
 
-.choix_reservation {
+.reservation {
 	padding: 10px;
 }
 
@@ -147,7 +150,7 @@ button:hover {
   border-radius: 3px 0 0 3px;
 }
 
-.avis_utilisateurs_fiche_produit {
+.avis_utilisateurs {
 	clear: both;
 }
 
@@ -158,7 +161,7 @@ button:hover {
 	border: 1px solid #ccc;
 }
 
-.subtitle_description {
+.subtitle {
 	font-family: "Helvetica bold";
 	font-size: 20px;
 	color:#008080;
@@ -177,357 +180,1111 @@ li {
 	color: #474E55;
 }
 
-.titre_article_cgv {
-	font-family: "helvetica";
-	color: #474E55;
+.nom_hebergement {
+	margin-top: 10px;
+	margin-bottom: 10px;
 }
 
-.adresse_postale {
-	font-family: "helvetica";
-	font-size: 18px;
-	font-weight: bold;
-	color: #474E55;
-	text-align: justify;
+/* Page d'acceuil */
+.index.Container {
+margin:0 auto;
+width:90%;
+height:50%;
+
 }
 
-.mention_importante {
-	border: 1px solid #ccc;
+.ui_grid_container {
+width:90%;
+height:50%;
+padding:5px;
+margin:5px;
+text-align:center;
+width:100%;
 }
 
-.green_link {
-	color: #579517;
+.block {
+width:30%;
+height:25%;
+border:1px solid grey;
+display:inline-block;
+text-align:center;
+padding:0px;
+margin:8px;
+background-color: #f4661B;
+position: relative;
 }
 
-.sujet_left {
-	width: 47%;
-	float: left;
-	padding: 0 15px 0 15px;
-	border-right: 2px solid #ccc
+.index p {
+font-family: "Helvetica";
+font-size:16px;
+color:#474E55;
+line-height: 22px;
+font-weight: 200;
 }
 
-.sujet_right {
-	width: 47%;
-	float: left;
-	padding: 0 15px 0 15px;
-}
+.index img {
+width: 100%;
+height: 257px;
+display:block;
+} 
 
-.reponse {
-	display: none;
-}
-
-.question:hover ~ .reponse {
-	display: block;
-}
-
-.sujet_1, .sujet_2, .sujet_3, .sujet_4, .sujet_5, .sujet_6, .sujet_7, .sujet_8, .sujet_9, .sujet_10, .sujet_11, .sujet_12 {
-	border-bottom: 1px solid #ccc; 
-}
-
-.sujet_reductions { 
-margin-top: 80px; 
-}
-
-.sujet_profil_hote {
-	margin-top: 80px;
-}
-
-.titre_article_mentions_legales {
-	font-family: "helvetica";
-	color: #474E55;
-}
-
-.image_mascotte {
-	width: 25%; 
-	float: left;
-}
-
-.texte_page_erreur {
-	width: 75%;
-	float: left;
-	margin-top: 60px;
-}
-
-.boutons_page_erreur {
-	float: left;
-	margin-top: 57px;
-}
-
-.bouton_redirection {
-	background-color: #F4661B;
+.hebergements_destination_home {
 	color: #FFFFFF;
-	height: 35px;
-	min-width: 150px;
-	font-family: "helvetica";
-	margin-right: 70px;
-	border: none;
 }
 
-.formulaire_paiement {
-	float: left;
-	width: 69%;
+.overlay {
+position: absolute;
+top: 0;
+bottom: 0;
+left: 0;
+right: 0;
+height: 100%;
+width: 100%;
+opacity: 0;
+transition: .5s ease;
+background-color: #FFFFFF;
 }
 
-.reservation_details_right {
-	float: left;
-	width: 30%; 
-	padding-left: 7px;
-	border: 1px solid #ccc;
+.block:hover .overlay {
+  opacity: 0.7;
 }
 
-.reservation_details_right div {
-	margin-bottom: 20px;
+.texte_survol {
+color: #008080;
+font-size: 20px;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+-ms-transform: translate(-50%, -50%);
+text-align: center;
 }
 
-.block_details_2, .block_details_3, .block_details_4 {
-	border-bottom: 1px solid #ccc;
-	padding-bottom: 10px;
+.index.image
+{
+width:30%;
+float:left;
 }
 
-.option_reservation {
-	font-family: "helvetica";
-	font-size: 16px;
-	font-weight: 200;
-	color: #474E55;
+.article
+{
+display:block;
+width:70%;
+height:25%;
+margin-bottom:20px;
+margin-left:400px;
+}
+
+.inscription_proprietaire
+{
+display:block;
+width:100%;
+height:25%;
+}
+
+.content_inscription
+{
+border:1px solid grey;
+width:100%;
+height:30%;
+display:inline-block;
+text-align:center;
+}
+
+.bouton_orange{
+	background-color:#F4661B;
+	color:#FFFFFF;
+	font-size:16px;
+	font:helvetica;
+	padding:5px;
+	border:0px;
+	margin-top:35px;
+	}
+
+.bouton_orange:hover{
+background-color:#E67E30;
+}
+
+.index h3{
+text-align:left;
+margin-bottom:10px;
+font:helvetica bold;
+color:#474E55;
+font-size:20px;
+}
+
+h4{
+margin-top:10px;
+margin-bottom:35px;
+vertical-align:top;
+font-size:20px;
+color:#008080;
+}
+
+.article p
+{
+line-height:40px;
+}
+
+/* Page catégorie */
+
+.categorie p{
+	font-family:Helvetica;
+	font-size:16px;
+	Color:#474E55;
+	margin-left: 10%;
+}
+
+.categorie.bouton-orange{
+	background-color:#F4661B;
+	color:#FFFFFF;
+	font-size:16px;
+	font:helvetica;
+	padding:8px;
+	border:none;
+	margin:23px;
+	text-align:center;
+	vertical-align: bottom;
+    margin-left: 7%;
+}
+	
+.bouton-orange:hover{
+background-color:#E67E30;
+}
+
+/*--- DROPDOWN ---*/
+.ofiltres{
+	font-size:25px;
+	cursor:pointer;
+	float:left;
+	color:#F4661B;
+	position:-webkit-sticky; /* Safari */
+    position:sticky;
+    top: 0;
+	vertical-align:middle;
+}
+
+.sidenav {
+	height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #ffffff;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 0px;
+	width:18%;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 16px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav.closebtn {
+    position: absolute;
+    top: 0;
+    right: -7px;
+    font-size: 32px;
+    margin-left: 50px;
+}
+
+.sidenav.bouton-orange{
 	margin:0px;
 }
-
-.apercu_logement {
-	width: 60%;
-	float: left;
-}
-
-.infos_details_block_2 {
-	float: left;
-	width: 40%;
-}
-
-.apercu_logement {
-	float: left;
-    width: 60%;
-    margin-left: 0px;
-}
-
-.apercu_logement img {
-	width: 200px;
-	height: 150px;
-}
-
-.photo_profil_hote {
-	float: left;
-	width: 20%;
-}
-
-.photo-hote {
-	border-radius: 50%;
-	width: 200px;
-	height: 200px;
-}
-
-.informations_profil_hote {
-	float: left;
-	width: 80%;
-}
-
-.presentation_profil_hote {
-	float: right;
-	width: 80%;
-}
-
-.bouton-contact {
-	text-align: center;
-	margin-top: 30px;
-	margin-bottom: 30px;
-}
-
-.hebergements_profil_hote {
-	float: right;
-	width: 80%;
-}
-
-.hebergements_profil_hote img {
-	width: 200px;
-	height: 200px;
-	float: left;
-	margin-left: 30px;
-}
-
-.commentaires_profil_hote {
-	float: right;
-	width: 80%;
-}
-
-.reglement_details_left {
-float: left; 
-width: 69%;
-height: 680px;
-}
-
-.les_details {
-	height: 50%;
-	padding-right: 30px;
-}
-
-.reglement_interieur {
-	height: 50%;
-	padding-right: 30px;
-}
-
-.reglement_details_left {
-	float: left;
-	width: 30%; 
-	padding-left: 7px;
-	border: 1px solid #ccc;
-}
-
-.reglement_details_right div {
-	margin-bottom: 20px;
-}
-
-.confirmation_reservation {
-	clear: both;
-}
-
-.accepter_reglement {
-	font-family: "helvetica";
-	font-size: 16px;
-	font-weight: 200;
-	color: #474E55;
-	margin-bottom: 5px;
-}
-
-.footer_links a {
-	text-decoration: none;
-	font-family: Helvetica; 
-	font-size: 14px;
-	color: #579517;
-}
-
-.liens_footer {
-	list-style-type: none;
-	float: left;
-	margin-left: 40px;
-	min-width: 20%;
-}
-
-.footer_links li {
-	margin-top: 10px;
-}
-
-.footer_links a:hover {
-	text-decoration: underline;
-}
-
-.footer-segment-1, .footer-segment-2 {
-	max-width: 60%;
-	margin: auto;
-}
-
-.footer-segment-1 .footer_links {
-	height: 80px;
-	margin-bottom: -16px;
-}
-
-.social_media_icons {
-	text-align: center;
-}
-
-.footer-segment-2 .social_media_icons {
-	width: 99%
-}
-
-.links_left, .links_right {
-	width: 100%;
-}
-
-.icon_left, .icon_right {
-	width: 100%;
-}
-
-.facebook_icon, .twitter_icon, .instagram_icon, .pinterest_icon {
-	width: 25%;
-	float: left;
-
-}
-
-.header_sticky {
-	width:99%;
-	height:80px;
-	background-color: #FFFFFF;
-	box-shadow: 2px 2px 2px #C0C0C0;
-	position: fixed; 
-	z-index: 1000000; 
-	top: 0; 
-	left:0; 
-	right:0;
-	margin: 0px;
-}
-
-nav, .home_button, .espace_user, .languages {
+.categorie.fbutton.icon{
 	float:left;
-	width: 25%;
+}
+.categorie.fbutton.expand{
+	vertical-align:middle;
+	margin-left:2px;
+	float:right;
 }
 
-nav .ul {
-	font-size: 16px; 
-	font-family: helvetica;
-	color: #474E55;
-	background-color: #FFFFFF;
-	text-align: left;
+.categorie.icon{
+	vertical-align:middle;
+	margin-right:2px;
 }
 
-.menu_burger {
-    position: relative;
-    display: inline-block;
-    margin-left: 50px;
-    margin-top: 15px;
+#filtres{
+    list-style: none;
+	float:left;
+	z-index: 1;
+	font-family:helvetica;
+	text-align:center;
 }
 
-.dropdown_menu {
-    display: none;
+#filtres ul{
+	z-index:2;
+	padding:0px;
+	margin: 0 -5px;
+}
+
+#filtres li{
+	margin:0px 5px;
+}
+
+#filtres .fbutton{
+    margin: 10px 0px;
+    padding: 10px 0px;
+}
+
+#filtres ul li{
+	margin-top:-15px;
+}
+
+#filtres .nbre{
+	margin-top:-15px;
+}
+
+.filtres2{
+	margin:5px
+}
+.categorie.fbutton a{
+	text-decoration: none;
+	text-align:center;
+	color:#000000;
+}
+
+.categorie li{
+	list-style: none;	
+	position:relative;
+	background-color: #ffffff;
+}
+
+.categorie ul {
+    background-color: #ffffff; /* Adding a background makes the dropdown work properly in IE7+. Make this as close to your page's background as possible (i.e. white page == white background). */
     position: absolute;
-    background-color: #FFFFFF;
-    min-width: 350px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    padding: 12px 16px;
-    z-index: 1;
+    left: -9999px; /* Hide off-screen when not needed (this is more accessible than display: none;) */
+	/* margin:0px; */
+	padding:0px; 
+	border:none;
+}
+.categorie ul li {
+    padding-top: 1px; /* Introducing a padding between the li and the a give the illusion spaced items */
+    float: none;
+}
+.categorie ul a {
+    white-space: nowrap; /* Stop text wrapping and creating multi-line dropdown items */
+}
+.categorie li:hover ul { /* Display the dropdown on hover */
+    left: 0; /* Bring back on-screen when needed */
+}
+.categorie li:hover a { /* These create persistent hover states, meaning the top-most link stays 'hovered' even when your cursor has moved down the list. */
+    color: black;
+    background-color: #ffffff;
+    text-decoration: none;
+}
+.categorie li:hover ul a { /* The persistent hover state does however create a global style for links even before they're hovered. Here we undo these effects. */
+    text-decoration: none;
+}
+.categorie li:hover ul li a:hover { /* Here we define the most explicit hover states--what happens when you hover each individual link. */
+    /* background-color: #ffffff; /*couleur qui s'applique aux éléments internes lorsque la souris passe dessus*/ */
 }
 
-.menu_burger:hover .dropdown_menu {
-    display: block;
+.categorie select{
+	margin-top:-15px;
+}
+	/*--- Tranche de prix ---*/
+.slidecontainer {
+    width: 100%;
+	font-family:helvetica;
+	margin-top:-15px	
 }
 
-.dropdown_menu a {
-	text-decoration: none;
-	color: #474E55;
+.fbutton.slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 25px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
 }
 
-.dropdown_menu li {
-	padding-top: 10px;
+.fbutton.slider:hover {
+    opacity: 1;
 }
 
-.menu_burger a:hover {
-	color: #579517;
-	font-size: 18px;
+.fbutton .slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    background: #4CAF50;
+    cursor: pointer;
 }
 
-.espace_user a {
-	text-decoration: none;
-	color :#474E55;
+.fbutton.slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    background: #4CAF50;
+    cursor: pointer;
 }
 
-.espace_user a:hover {
-	color: #579517;
-	font-size: 17px;
+/* --LOGEMENTS-- */
+.liste-de-logements{
+	-moz-column-count: 2;
+    -webkit-column-count: 2;
+    column-count: 2;
+	font-family:helvetica;
+	margin-left: 10%;
 }
 
-.home_button, .espace_user {
-	text-align: right;
-	padding-top: 10px;
+.bloc-logement{
+	display:block;
+	padding:10px 0px;
+	overflow:auto;
 }
 
-.languages img {
-	padding-left: 75px;
-	padding-top: 28px;
+.block-logement button{
+  padding: 6px 15px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  background-color: #F4661B;
+  color:#ffffff;
+}
+
+.intitule-logement{
+	display:block;
+	text-align:center;
+}
+
+.intitule-logement h3{
+	display:inline;
+	padding:0;
+	font-family:Helvetica;
+	font-size:20px;
+	color : #474E55;
+}
+
+.imglogement{
+    max-width: 250px;
+    max-height: 178px;
+    min-width: 218px;
+    min-height: 197px;   
+	float:left;
+}
+
+.imgregion{
+	width:15%;
+	bottom: 0;	
+}
+.categorie textarea{
+	border:none;
+	width: 56%;	
+}
+.categorie.fbutton{
+	width:200px;
+    text-decoration: none;
+}
+
+/* --NUMEROS DE PAGES-- */
+
+.pages{
+	text-align:center;
+	padding:10px 0px;
+	font-size:16px;
+	font-family:helvetica;
+}
+
+.pages button{
+    max-width: 80px;
+    min-width: 40px;
+    max-height: 80px;
+    min-height: 40px;
+	border:none;
+}
+
+.pages button:hover{
+background-color:#008080;
+color:#ffffff;
+}
+
+/* Page compte et espace utilisateur*/
+	/* Tous Formulaires */
+.compte.formulaires{
+	display:block;
+	padding:10px;		
+	border-style:none;
+}
+
+.compte input{
+	border:1px solid #e5ebc8;	
+}
+.compte input[type=text]{
+	width: 27%;
+	height:31px;
+}
+.blocmargin{
+    margin: 0 auto;
+    width: 758px;
+}
+
+.compte.bouton_orange{
+  padding: 6px 15px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  background-color: #F4661B;
+  color:#ffffff;
+  text-align:right;
+}
+
+
+.compte label{
+	color:#474E55;
+	font-size:16px;
+}
+
+.txtorphelin{
+	color:#474E55;
+	font-size:16px;
+}
+
+	/* Formulaire Connexion */
+.fconnexion{
+	padding:10px 0px;
+	margin: auto 5%;
+}
+
+.fconnexion.champ{
+	padding:8px 0px;
+}
+
+.rslog{
+	float:left; 
+    margin-right: 5%;
+    margin-left: 20%;
+}
+	
+.compte.bouton_facebook{
+  padding: 6px 15px;
+  background: #ddd;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  background-color: #3b5998;
+  color:#ffffff;
+}
+
+.compte.bouton_google{
+  padding: 6px 15px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  background-color: #DB4437;
+  color:#ffffff;
+}
+
+
+.fconnexion.email{
+  margin-bottom: 8px;
+}
+
+.champlogin{
+	float:left;
+    margin-right: 15%;	
+}
+
+.fconnexion p{
+	float:left;
+	    margin-right: 5%;		
+}
+
+.fconnexion a{
+	text-align:right;
+	font-family:Helvetica;
+	font-size:16px;
+	color:#579517;	
+	margin-top: 8px;
+	text-decoration:none;
+	padding-top:3px;
+	margin-right:15px;
+}
+
+.conform{
+	margin:0% 13%;
+}
+
+.btmdp{
+	display:block;
+	text-align:right;
+    width: 58.5%;
+}
+	/* Formulaire Insciption */
+
+.finscription{
+	display:block;
+	padding:10px 0px;
+    margin: auto 5%;	
+}	
+
+.finscription.champ{
+	padding:8px 0px;
+    height: 31px;
+}
+
+.finscription.finscriptionnom{
+	padding:0px 35px;
+}
+
+.finscription.tailleform{
+	width:36%;
+    height: 31px;
+}
+	/* Formulaire Express */	
+.fexpress{
+	display:block;
+	padding:10px 0px;
+    margin: auto 5%;	
+}	
+
+.fexpress.champ{
+	padding:5px 0px;
+}
+
+.fexpress.tailleform{
+    width: 35%;
+    height: 31px;
+}
+
+.fexpress.tailleform2{
+    width: 33%;
+    height: 31px;	
+}
+
+/* Page filtres */
+.pageFiltres.nav {
+    list-style: none;
+	font-family:helvetica;
+    width: 100%;
+	Margin:10px 5%;
+	vertical-align:middle;
+
+}
+.pageFiltres.nav li {
+    float: left;
+    position: relative;
+	width:18%;
+}
+.pageFiltres.nav a {
+    color: #474E55;
+    background-color: #ffffff;
+    text-decoration: none;
+	font-size:15px;
+	text-align:center;
+
+}
+.pageFiltres.nav a:hover {
+    color: black;
+    background-color: #ffffff;
+    text-decoration: none;
+}
+
+/*--- DROPDOWN ---*/
+.pageFiltres.nav ul {
+    background-color: #ffffff; /* Adding a background makes the dropdown work properly in IE7+. Make this as close to your page's background as possible (i.e. white page == white background). */
+    list-style: none;
+    position: absolute;
+    left: -9999px; /* Hide off-screen when not needed (this is more accessible than display: none;) */
+	vertical-align:middle;
+	border:none;
+}
+.pageFiltres.nav ul li {
+    padding-top: 1px; /* Introducing a padding between the li and the a give the illusion spaced items */
+    float: none;
+}
+.pageFiltres.nav ul a {
+    white-space: nowrap; /* Stop text wrapping and creating multi-line dropdown items */
+}
+.pageFiltres.nav li:hover ul { /* Display the dropdown on hover */
+    left: 0; /* Bring back on-screen when needed */
+	z-index:10000;
+}
+.pageFiltres.nav li:hover a { /* These create persistent hover states, meaning the top-most link stays 'hovered' even when your cursor has moved down the list. */
+    color: black;
+    background-color: #ffffff;
+    text-decoration: none;
+}
+.pageFiltres.nav li:hover ul a { /* The persistent hover state does however create a global style for links even before they're hovered. Here we undo these effects. */
+    text-decoration: none;
+}
+.pageFiltres.nav li:hover ul li a:hover { /* Here we define the most explicit hover states--what happens when you hover each individual link. */
+    background-color: #ffffff; /*couleur qui s'applique aux éléments internes lorsque la souris passe dessus*/
+}
+
+.pageFiltres.fbutton{
+	width:200px;
+	text-align:center;
+	font-size:16px;
+	padding:10px 5px;
+	box-sizing: content-box;
+}
+
+.pageFiltres.fbutton.border{
+	border:1px solid #d4d4d5;	
+	border-radius: 4px;
+}
+
+.pageFiltres.fbutton.calendrier{
+	padding-top:0px;
+}
+
+.pageFiltres.fbutton.icon{
+	vertical-align:text-top;
+	width:16px;
+	text-align:left;
+	margin-right:10px;
+	color:#474E55;	
+}
+
+.pageFiltres.fbutton.expand{
+	vertical-align:text-bottom;
+	margin-left:7px;
+	width:13px;
+	text-align:right;
+	color:#474E55;
+}
+
+.pageFiltres.fbutton.up{
+	margin-top:3px;
+}
+
+#arrivee{
+	width:100%;
+}
+
+#arrivee2{
+	width:100%;
+	margin-left:-5%;
+	padding-top:-1%;
+}
+
+#depart{
+	width:100%;
+}
+#depart2{
+	width:100%;
+}
+/* Style the search box inside the navigation bar */
+.barre-de-recherche{
+	margin-left:25%;
+	margin-right:10%;
+}
+.barre-de-recherche input[type=text] {
+    float: left;
+    padding: 8px;
+    margin-top: 8px;
+    font-size: 17px;
+	width:600px;
+	border:1px solid #d4d4d5;
+	border-radius: 4px;
+}
+
+.barre-de-recherche button:hover {
+  background: #e67e30;
+}
+
+.barre-de-recherche button {
+  padding: 10px 15px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  background-color: #F4661B;
+  color:#ffffff;
+}
+
+/* Newsletter */
+.newslettercss.entete{
+	margin-bottom:30px;
+}
+
+.newslettercss p{
+	color:#474E55;
+	font-size:16px;
+	font-family:helvetica;
+}
+
+.newslettercss fieldset{
+	display;inline-block;
+	text-align:center;
+	border:0px;
+	margin:0 5px;
+}
+
+.newslettercss.formulaire{
+	display:block;
+	width:100%;
+	height:100%;
+}
+
+.newslettercss.coordonnees_radio{
+	display:inline-block;
+	width:100%;
+	margin-bottom:15px;
+	padding:5px;
+	color:#474E55;	
+	}
+	
+.coordonnees_ligne{
+	margin-bottom: 25px;
+	color:#474E55;
+}
+	
+.newslettercss.bouton_orange{
+	background-color:#F4661B;
+	color:#FFFFFF;
+	font-size:16px;
+	font:helvetica;
+	padding:8px;
+	border:0px;
+}
+	
+.newslettercss.bouton_orange:hover{
+background-color:#E67E30;
+}
+
+.newslettercss.champ{
+	width:15%;
+	display:inline-block;
+	font:helvetica;
+}
+
+/* Page rejoignez-nous	 */
+.Header
+{
+text-align:center;
+}
+
+.rejoindre h1
+{
+margin-top:40px;
+margin-bottom:50px;
+text-align:center;
+}
+
+.rejoindre img
+{
+width:9%;
+display:inline-block;
+}
+
+.image-1
+{
+padding-top:50px;
+padding-right:30px;
+}
+
+.image-2
+{
+padding-top:40px;
+padding-right:30px;
+}
+
+.image-3
+{
+padding-top:100px;
+padding-right:30px;
+}
+
+.image-4
+{
+padding-top:30px;
+padding-right:30px;
+}
+
+.intro
+{
+text-align:center;
+vertical-align:bottom;
+display:block;
+margin-bottom:45px;
+font-size:18px;
+}
+
+.rejoindre p
+{
+font:Helvetica;
+font-size:16px;
+color:#474E55;
+text-align:left;
+display:inline-block;
+vertical-align:top;
+}
+
+.rejoindre h2
+{
+margin-bottom:20px;
+text-align:left;
+}
+
+.rejoindre.bloc
+{
+margin-bottom:40px;
+}
+
+.bloc-1
+{
+margin-bottom:30px;
+}
+
+
+.rejoindre.section
+{
+width:75%;
+height:20%;
+display:inline-block;
+vertical-align:top;
+margin-left:20px;
+}
+
+.rejoindre.bouton_orange
+{
+	background-color:#F4661B;
+	color:#FFFFFF;
+	font-size:20px;
+	font:helvetica;
+	font-weight:bold;
+	padding:10px;
+	margin-bottom:20px;
+	width:17%;
+	text-align:center;
+	margin-left:580px;
+	border:0px;
+}
+
+.logos
+{
+margin-right:70px;
+margin-left:70px;
+width:9%;
+border:1px solid grey;
+}
+
+.partenaires
+{
+width:100%;
+text-align:center;
+margin-bottom:50px;
+margin-top:40px;
+}
+
+.presse
+{
+padding-right:80px;
+padding-left:80px;
+padding-bottom:40px;
+font:helvetica;
+font-size:22px;
+font-style:bold;
+color:#0131B4;
+}
+
+.conditions
+{
+font-size:13px;
+}
+
+.rejoindre ul
+{
+list-style-type:disc;
+list-style-position:inside;
+margin-left:50px;
+}
+
+.rejoindre li
+{
+font-size:16px;
+line-height:30px;	
+font-family:Helvetica;
+}
+
+/* Page qui-sommes-nous */
+.qui.Container	
+{
+margin:0 auto;
+width:90%;
+height:50%;
+}
+
+.qui.Header
+{
+text-align:center;
+}
+
+.qui.intro
+{
+text-align:center;
+vertical-align:bottom;
+display:block;
+margin-bottom:35px;
+font-size:18px;
+}
+
+.main
+{
+padding:5px;
+margin:5px;
+width:100%;
+}
+
+.main_1,.main_2
+{
+margin-bottom:30px;
+}
+
+.main_3
+{
+width:100%;
+display:inline-block;
+}
+
+.main_3 h3
+{
+margin-bottom:20px;
+}
+
+.qui h1
+{
+margin-top:40px;
+margin-bottom:40px;
+}
+
+
+.qui.image
+{
+width:23%;
+display:inline-block;
+padding-top:2px;
+}
+
+.paragraphe
+{
+margin-right:30px;
+text-align:justify;
+}
+
+.qui p
+{
+font:Helvetica;
+font-size:16px;
+color:#474E55;
+text-align:left;
+display:inline-block;
+vertical-align:top;
+}
+
+.qui h2
+{
+margin-bottom:30px;
+text-align:left;
+}
+
+.qui h3
+{
+font-size:20px;
+font:helvetica bold;
+color:#474E55;
+text-align:left;
+}
+
+.qui.bloc
+{
+width:75%;
+height:20%;
+display:inline-block;
+vertical-align:top;
+}
+
+.qui.section
+{
+display:inline-block;
+margin-bottom:15px;
+}
+
+.portrait
+{
+width:26%;
+height:30%;
+display:inline-block;
+padding:15px;
+border:1px solid;
+border-color:#008080;
+margin:15px;
+}
+
+
+.equipe
+{
+margin-bottom:40px;
+}
+
+.equipe h2
+{
+padding-left:10px;
+}
+
+.portrait p
+{
+padding-top:10px;
+padding:10px;
+}
+
+.portrait h3
+{
+color:#008080;
+}
+
+.portrait_FLORENT
+{
+padding-bottom:28px;
+}
+
+.portrait_LEO
+{
+padding-bottom:28px;
+}
+
+
+.photo
+{
+width:60%;
+margin-top:25px;
+}
+
+.equipe
+{
+text-align:center;
+}
+
+.italique
+{
+font-style:italic;
 }
 
 @media all and (min-width:1200px) and (max-width:1600px) {
@@ -540,11 +1297,11 @@ nav .ul {
 		margin : 20px;
 	}
 
-	.infos_hebergement_left {
+	.infos_left {
 		width: 60%;
 	}
 
-	.infos_hebergement_right {
+	.infos_right {
 		width: 40%;
 	}
 
@@ -607,7 +1364,7 @@ nav .ul {
 		-webkit-user-select: none;
 	}
 
-	.subtitle_description {
+	.subtitle {
 	font-family: "Helvetica bold";
 	font-size: 16px;
 	color:#008080;
@@ -636,96 +1393,246 @@ nav .ul {
 		height: 150px;
 	}
 
-	.sujet_paiement {
-		margin-top: 80px;
-	}
+/* Page Index	 */
+.index img
+{
+max-height:130px;
+}
 
-	.sujet_left {
-	width: 47%;
-	float: left;
-	padding: 0 15px 0 15px;
-	border-right: none;
-	}
+.hebergements_destination_home
+{
+font-size:18px;
+}
 
-	.photo_profil_hote {
-		width: 30%;
-	}
-	.informations_profil_hote, .presentation_profil_hote, .hebergements_profil_hote {
-		width: 70%;
-	}
+.texte_presentation p
+{
+text-align:justify;
+}
 
-	h1 {
-		font-size: 35px;
-	}
+.inscription_proprietaire
+{
+width:100%;
+margin:0 auto;
+padding:5px;
+}
 
-	h2 {
-		font-size: 30px;
-	}
+.article
+{
+margin-left:220px;	
+}
 
-	.photo-hote {
-		width: 150px;
-		height: 150px;
-	}
+.article p
+{
+padding-left:18px;
+text-align:justify;
+max-width:85%;
+}
 
-	.hebergements_profil_hote img {
-		width: 150px;
-		height: 150px;
-	}
+.index.image
+{
+max-width:100%;
+}
+/* Page catégorie */
+.dnone{
+	display:none;
+}
+#filtres.bouton-orange{
+	margin:0px;
+}
+.liste-de-logements{
+	display:grid;
+}
+.imglogement {
+    max-width: 250px;
+    max-height: 178px;
+    min-width: 236px;
+    min-height: 230px;
+}
+.categorie textarea {
+    border: none;
+    width: 57%;
+}
+.imgregion {
+    width: 19%;
+    bottom: 0;
+    margin-left: 0%;
+}
+.categorie.bouton-orange {
+    margin: 37px;
+    margin-left: 9%;
+}
+/* Page compte et espace utilisateur */
+.compte.blocmargin {
+    margin: auto;
+    width: 100%;
+ }
+.compte.formulaires{
+	 padding:0;
+ }
+.compte h2{
+	 font-size:16px;
+ }
+.cconnexion{
+	 text-align:center;
+ }
+.rslog{
+	box-sizing: content-box;
+    margin: 0px;	 
+ }
+.finscription .tailleform {
+    width: 37%;
+}
+.conform {
+    margin: 0% 13%;
+}
+.fconnexion p {
+    float: left;
+    width: 0%;
+    margin-left: 11%;
+    margin-right: 13%;
+}
 
-	.reglement_details_right {
-		clear: both;
-		width: 100%;
-	}
-
-	.reservation_details_left{
-		width: 100%;
+.compte input[type=number]{
+	width: 21%;
+    height: 31px;
+}
+.compte input[type=text]{
+	width: 27%;
+    height: 31px;
+}
+.btmdp{
+	 width: 81.5%;
+}
+.fexpress.tailleform {
+    width: 39%;
+}
+.fexpress.tailleform2 {
+    width: 37.5%;
+}
+/* Page filtres */
+#filtres{
+    box-sizing: content-box;
 	}
 	
+.barre-de-recherche input[type=text] {
+	width:66%;
+	}
+
+.pageFiltres.liste1 {
+    float: none;
+    width: 160%;
 }
+
+.pageFiltres.liste2 {
+    clear: both;
+    width: 176%;
+    margin-left: 12%;
+    padding-top: 1%;
+}
+#arrivee{
+	width: 100%;
+}
+#arrivee2{
+    width: 100%;
+    margin-left: 4%;
+}
+#depart {
+    width: 100%;
+}
+#depart2 {
+    width: 100%;
+    margin-left: 5%;
+}
+/* Page newsletter */
+.newslettercss.champ{
+	display:block;
+	margin:auto;
+	width:50%;
+	}	
+.newslettercss.padding{
+	padding: 10px 0px;
+}
+.188{
+	width:190px;
+}
+.182{
+	width:185px;
+}
+/* Page rejoignez-nous */
+.rejoindre img
+{
+width:16%;
+text-align:center;
+}
+
+.rejoindre p
+{
+font-size:18px;
+}
+
+.rejoindre ul
+{
+font-size:18px;
+}
+
+.rejoindre.bouton_orange
+{
+margin:20px;
+width:30%;
+font-size:16px;
+text-align:center;
+margin-left:270px;
+}
+
+.logos
+{
+width:11%;
+margin-right:30px;
+margin-left:30px;
+}
+
+.presse
+{
+padding-right:15px;
+padding-left:15px;
+}
+/* Page qui-sommes-nous */
+.image
+{
+width:60%;
+}
+
+.paragraphe
+{
+margin:0;
+margin-bottom:15px;
+padding:0;
+}
+
+.qui body
+{
+text-align:center;
+margin:0 auto;
+}
+
+.portrait
+{
+width:60%;
+}
+}
+
 
 @media all and (min-width:480px) and (max-width:739px) {
-	.header_sticky {
-		display: block;
-		width: 100%;
-		margin: 0px;
-	}
-
-	nav {
-		width: 33%;
-	}
-
-	.espace_user a {
-		display: none;
-	}
-
-	.languages {
-		width: 33%
-	}
-
-	.languages img {
-		padding-left: 73px;
-		padding-top: 0px;
-	}
-
-	.home_button {
-		width: 33%;
-	}
-
-	.home_button img {
-		width: 200px;
-	}
-}
-
 	.container {
 		display: block;
 		margin : 10px;
 	}
 
-	.infos_hebergement_left {
+	.infos_left {
 		width: 100%;
 	}
 
-	.infos_hebergement_right {
+	.infos_right {
 		width: 100%;
 	}
 
@@ -794,95 +1701,326 @@ nav .ul {
 		width: 80%;
 	}
 
-	.sujet_paiement {
-		margin-top: 80px;
-	}
+/* Page d'acceuil	 */
+.index img
+{
+width:90%;
+}	
+	
+.block
+{
+width:95%;
+text-align:center;
+}
+	
+.ui_grid_container
+{
+margin:0 auto;
+text-align:center;
+}
 
-	.sujet_left {
-	width: 47%;
-	float: left;
-	padding: 0 15px 0 15px;
-	border-right: none;
-	}
+.index.Container
+{
+margin:0 auto;
+}
 
-	.photo_profil_hote {
-		width: 30%;
-	}
-	.informations_profil_hote, .presentation_profil_hote, .hebergements_profil_hote {
-		width: 70%;
-	}
+.index h1
+{
+font-size:28px;
+}
 
-	.photo-hote {
-		width: 100px;
-		height: 100px;
-	}
+.texte_presentation p
+{
+padding:7px;
+text-align:justify;
+}
 
-	.hebergements_profil_hote img {
-		width: 100px;
-		height: 100px;
-	}
+.inscription_proprietaire
+{
+width:100%;
+margin:0 auto;
+padding:5px;
+}
 
-	h1 {
-		font-size: 30px;
-	}
+.index.image
+{
+width:100%;
+margin-bottom:9px;
+}
 
-	h2 {
-		font-size: 25px;
-	}
+.article
+{
+text-align:justify;
+margin:0 auto;
+width:100%;
+}
 
-	.reglement_details_right {
-		clear: both;
-		width: 100%;
-	}
+.article p
+{
+text-align:justify;
+margin:0;
+padding-right:10px;
+padding-left:10px;
+}
 
-	.reglement_details_left{
-		width: 100%;
-	}
+h4
+{
+text-align:center;
+}
 
+.index button
+{
+text-align:center;
+}
+
+.index.bouton_orange
+{
+text-align:center;
+}	
+/* Page catégorie	 */
+.categorie.dnone{
+	display:none;
+}
+.categorie.liste-de-logements{
+	display:grid;
+}
+
+/* Page compte et espace utilisateur */
+.compte.blocmargin {
+    margin: auto;
+    width: 100%;
+ }
+ .compte.formulaires{
+	 padding:0;
+ }
+.cconnexion{
+	 text-align:center;
+ }
+.compte h2{
+	 font-size:16px;
+ } 
+.rslog{
+	box-sizing: content-box;
+    margin: 0px;	 
+ }
+.btmdp {
+    text-align: center;
+    width: 96%;
+}
+.compte.bouton_orange{
+    margin-right: -7px;	
+}
+.finscription.tailleform {
+    width: 280px;
+}
+.finscription.finscriptionnom {
+    padding: 0px 0px;
+}
+.fexpress.tailleform {
+    width: 280px;
+}
+.champ.phone1{
+    margin-right: 40px;
+}
+.compte.fconnexion p {
+    float: none;
+    margin-right: 0px;
+}	
+.compte.fconnexion a{
+	text-align: center;
+	margin-right: -14px;
+}
+.champlogin {
+    float: none;
+    margin: auto;
+}
+.blocmargin input{
+	width:280px;
+}
+.blocmargin input[type=radio]{
+	width:26px;
+}
+/* Page filtres */
+#filtres{
+    box-sizing: content-box;
+	}
+	
+.barre-de-recherche input[type=text] {
+	width:300px;
+	}
+.pageFiltres.liste1 {
+    float: none;
+    width: 160%;
+}
+
+.pageFiltres.liste2 {
+    clear: both;
+    width: 149%;
+    margin-left: 18%;
+    padding-top: 1%;
+}
+/* Page Newsletter */
+.newslettercss .champ{
+	display:block;
+	margin:auto;
+	width:50%;
+	}
+/* Page rejoignez-nous	 */
+.rejoindre img
+{
+width:37%;
+text-align:center;
+margin-left:40px;
+}
+
+.image-1
+{
+margin-left:80px;
+}
+
+.rejoindre h2
+{
+text-align:center;
+font-size:22px;
+}
+
+.rejoindre.Container
+{
+text-align:center;
+margin:0 auto;
+}
+
+.rejoindre.bloc
+{
+margin:0;
+padding:0;
+}
+
+.rejoindre h1
+{
+font-size:35px;
+}
+
+.rejoindre p
+{
+text-align:justify;
+}
+
+.intro
+{
+text-align:justify;
+padding-left:7px;
+padding-right:7px;
+margin:0;
+}
+
+
+.image-1
+{
+padding:0;
+padding-right:30px;
+}
+
+.image-2
+{
+padding-top:5px;
+padding-right:30px;
+}
+
+.image-3
+{
+padding-top:15px;
+padding-right:30px;
+}
+
+.image-4
+{
+padding-top:15px;
+padding-right:30px;
+}
+
+.partenaires
+{
+text-align:center;
+margin:0;
+}
+
+.rejoindre h2
+{
+font-size:20px;
+}
+
+.rejoindre.bouton_orange
+{
+margin:30px;
+width:60%;
+font-size:16px;
+}
+
+.rejoindre ul
+{
+text-align:justify;
+margin:0 auto;
+}
+
+.logos
+{
+width:25%;
+margin-right:15px;
+margin-left:15px;
+}
+
+.partenaires
+{
+margin-bottom:20px;
+}
+
+.presse
+{
+padding:10px;
+font-size:18px;
+}
+/* Page qui-sommes-nous */
+.image
+{
+width:60%;
+text-align:center;
+}
+
+.qui body
+{
+text-align:center;
+margin:0 auto;
+}
+
+.paragraphe
+{
+margin:0;
+margin-bottom:15px;
+}
+
+.qui h2
+{
+text-align:center;
+}
+
+.portrait
+{
+width:60%;
+}
 }
 
 @media all and (min-width:200px) and (max-width:479px) {
-	.header_sticky {
-		display: block;
-		width: 100%;
-		margin: 0px;
-	}
-
-	nav {
-		width: 33%;
-	}
-
-	.espace_user a {
-		display: none;
-	}
-
-	.languages {
-		width: 33%
-	}
-
-	.languages img {
-		padding-left: 40px;
-		padding-top: 0px;
-	}
-
-	.home_button {
-		width: 33%;
-	}
-
-	.menu_burger {
-		margin-left: 25px;
-	}
-
 	.container {
 		display: block;
 		margin : 10px;
 	}
 
-	.infos_hebergement_left {
+	.infos_left {
 		width: 100%;
 	}
 
-	.infos_hebergement_right {
+	.infos_right {
 		width: 100%;
 	}
 
@@ -975,45 +2113,419 @@ nav .ul {
 		user-select: none;
 		-webkit-user-select: none;
 	}
-
-	.sujet_paiement {
-		margin-top: 80px;
-	}
+/* Page d'acceuil */
+.index img
+{
+width:100%;
+max-height:180px;
+}	
 	
-	.sujet_left {
-	width: 47%;
-	float: left;
-	padding: 0 15px 0 15px;
-	border-right: none;
-	}
+.block
+{
+width:95%;
+text-align:center;
+}
+	
+.ui_grid_container
+{
+margin:0 auto;
+text-align:center;
+}
 
-	.photo_profil_hote {
-		width: 100%;
-		text-align: center;
-	}
-	.informations_profil_hote, .presentation_profil_hote, .hebergements_profil_hote {
-		width: 100%;
-	}
+.Container
+{
+margin:0 auto;
+padding-right:18px;
+}
 
-	.hebergements_profil_hote img {
-		width: 150px;
-		height: 150px;
-	}
-	h1 {
-		font-size: 25px;
-	}
+.index h1
+{
+font-size:28px;
+}
 
-	h2 {
-		font-size: 20px;
-	}
+.texte_presentation p
+{
+padding:7px;
+text-align:justify;
+}
 
-	.reglement_details_right {
-		clear: both;
-		width: 100%;
-	}
+.inscription_proprietaire
+{
+width:100%;
+margin:0 auto;
+padding:5px;
+}
 
-	.reglement_details_left{
-		width: 100%;
-	}
+.image
+{
+width:100%;
+max-height:200px;
+margin-bottom:9px;
+}
 
+.article
+{
+text-align:justify;
+margin:0 auto;
+width:100%;
+}
+
+.article p
+{
+text-align:justify;
+margin:0;
+padding-right:10px;
+padding-left:10px;
+}
+
+h4
+{
+text-align:center;
+}
+
+.index button
+{
+text-align:center;
+}
+
+.index.bouton_orange
+{
+text-align:center;
+}
+/* Page categorie	 */
+.ofiltres {
+    font-size: 16px;
+}
+.intitule-logement h3{
+	font-size:15px;
+}
+
+.imglogement {
+    max-width: 241px;
+    max-height: 139px;
+    min-width: 127px;
+    min-height: 176px;
+    float: left;
+}
+.categorie textarea {
+    border: none;
+    width: 55%;
+}
+.imgregion {
+    width: 15%;
+    bottom: 0;
+    margin-left: 1px;	
+}
+.categorie.bouton-orange {
+    font-size: 12px;
+    padding: 5px;
+    margin: 6px;
+    margin-left: 3%;
+}
+.pages button {
+    max-width: 80px;
+    min-width: 34px;
+    max-height: 80px;
+    min-height: 34px;
+    border: none;
+}
+.dnone{
+	display:none;
+}
+.liste-de-logements{
+	display:grid;
+}
+/* Page compte et espace utilisateur */
+.compte.blocmargin {
+    margin: auto;
+    width: 100%;
+ }
+ .compte.formulaires{
+	 padding:0;
+ }
+.cconnexion{
+	 text-align:center;
+ }
+.compte h2{
+	 font-size:16px;
+ } 
+.conform {
+    margin: 0% 19%;
+}
+.rslog{
+	box-sizing: content-box;
+    margin: 0px;	 
+ }
+.btmdp {
+    text-align: center;
+    width: 96%;
+}
+.compte.bouton_orange{
+    margin-right: -7px;	
+}
+.finscription.tailleform {
+    width: 98%;
+}
+.finscription.finscriptionnom {
+    padding: 0px 0px;
+}
+.fexpress.tailleform {
+    width: 98%;
+}
+.fexpress.tailleform2 {
+    width: 98%;
+}
+.champ.phone1{
+    margin-right: 40px;
+}
+.compte.fconnexion p {
+    float: none;
+    margin-right: 0px;
+}	
+.compte.fconnexion a{
+	text-align: center;
+	margin-right: -14px;
+}
+.champlogin {
+    float: none;
+    margin: auto;
+}
+.compte.blocmargin input{
+	width:98%;
+}
+.compte.blocmargin input[type=radio]{
+	width:26px;
+}
+/* Page filtres */
+#filtres{
+	box-sizing: content-box;
+}
+.pageFiltres.fbutton {
+    width: 89%;
+    font-size: 14px;
+	padding: 5px 0px;
+}
+.fbutton.icon {
+    vertical-align: text-bottom;
+    width: 12px;
+    text-align: left;
+    margin-right: 2px;
+}
+.fbutton.expand {
+    margin-left: 4px;
+    width: 12px;
+}
+.barre-de-recherche {
+    margin-left: 10%;
+    margin-right: 0%;
+}
+.barre-de-recherche input[type=text] {
+    width: 39%;
+    float: inherit;
+}
+.barre-de-recherche button {
+    padding: 9px 7px;
+    margin-left: -1%;
+}
+
+.pageFiltres.liste1 {
+    float: none;
+    width: 127%;
+}
+.pageFiltres.liste2 {
+    clear: both;
+    width: 150%;
+    margin-left: 0%;
+    padding-top: 4%;
+}
+#arrivee{
+margin-right:50%;
+}
+#arrivee2{
+    width: 39%;
+    margin-left: 10%;
+}
+#depart {
+    width: 72%;
+}
+#depart2 {
+    width: 50%;
+    margin-left: 39%;
+}
+.pageFiltres.nav{
+	 Margin: 10px -5%;
+}
+.pageFiltres.nav a {
+    color: black;
+    font-size: 12px;
+}
+.pageFiltres.nav li{
+	width: 19%;
+}
+/* page newsletter */
+.newslettercss .champ{
+	display:block;
+	margin:auto;
+	width:50%;
+	}
+/* Page rejoignez-nous */
+.rejoindre img
+{
+width:37%;
+text-align:center;
+margin-left:40px;
+}
+
+.image-1
+{
+margin-left:80px;
+}
+
+
+.rejoindre body
+{
+text-align:justify;
+margin:0;
+}
+
+.rejoindre h2
+{
+text-align:center;
+font-size:22px;
+}
+
+.rejoindre .Container
+{
+text-align:center;
+margin:0 auto;
+}
+
+.rejoindre.bloc
+{
+margin:0;
+padding:0;
+}
+
+.rejoindre h1
+{
+font-size:35px;
+}
+
+.rejoindre p
+{
+text-align:justify;
+}
+
+.intro
+{
+text-align:justify;
+padding-left:7px;
+padding-right:7px;
+margin:0;
+}
+
+
+.image-1
+{
+padding:0;
+padding-right:30px;
+}
+
+.image-2
+{
+padding-top:5px;
+padding-right:30px;
+}
+
+.image-3
+{
+padding-top:15px;
+padding-right:30px;
+}
+
+.image-4
+{
+padding-top:15px;
+padding-right:30px;
+}
+
+.partenaires
+{
+text-align:center;
+margin:0;
+}
+
+.rejoindre h2
+{
+font-size:20px;
+}
+
+.rejoindre.bouton_orange
+{
+margin:30px;
+width:60%;
+font-size:16px;
+}
+
+.rejoindre ul
+{
+text-align:justify;
+margin:0 auto;
+}
+
+.logos
+{
+width:25%;
+margin-right:15px;
+margin-left:15px;
+}
+
+.partenaires
+{
+margin-bottom:20px;
+}
+
+.presse
+{
+padding:10px;
+font-size:18px;
+}
+/* Page qui-sommes-nous */
+.image
+{
+width:80%;
+}
+
+.paragraphe
+{
+margin:0;
+margin-bottom:15px;
+}
+
+.qui body
+{
+text-align:center;
+margin:0 auto;
+}
+
+.qui h2
+{
+text-align:center;
+}
+
+.main_1 .p
+{
+text-align:justify;
+margin:10px;
+}
+
+.portrait
+{
+width:80%;
+}
+
+.qui h1
+{
+font-size:35px;
+}
 }
