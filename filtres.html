@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<link rel="stylesheet" type="text/css" href="reset.css">
+	<link rel="stylesheet" type="text/css" href="filtres.css">
+	<link rel="stylesheet" type="text/css" href="C:wamp64/www/wordpress/wp-content/themes/atypikhouse/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.4/semantic.min.css" rel="stylesheet" type="text/css" />
+	<link href="https://cdn.rawgit.com/mdehoog/Semantic-UI-Calendar/76959c6f7d33a527b49be76789e984a0a407350b/dist/calendar.min.css" rel="stylesheet" type="text/css" />
+	<script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.4/semantic.min.js"></script>
+	<script src="https://cdn.rawgit.com/mdehoog/Semantic-UI-Calendar/76959c6f7d33a527b49be76789e984a0a407350b/dist/calendar.min.js"></script>
+  <meta charset="utf-8">
+  </head>	
+ <body>
+	<div class="pageFiltres">
+	<div id="filtres">
+		<ul class="nav">
+			<div class="liste1">
+			<li>
+				<div class="fbutton border">
+				<img class="icon" src="location.png"><a href="#">Destinations</a><img class="expand" src="expand-button.png">
+				</div>
+				<ul>
+					<select name="Lieu" multiple>
+						<option value="">Auvergne-Rhône-Alpes</option>
+						<option value="">Bourgogne-Franche-Comté</option>
+						<option value="">Bretagne</option>
+						<option value="">Centre-Val de Loire</option>
+						<option value="">Corse</option>
+						<option value="">Grand Est</option>
+						<option value="">Hauts-de-France</option>
+						<option value="">Île-de-France</option>
+						<option value="">Normandie</option>
+						<option value="">Nouvelle-Aquitaine</option>
+						<option value="">Occitanie</option>
+						<option value="">Pays de la Loire</option>
+						<option value="">Provence-Alpes-Côte d'Azur</option>	
+					</select>				
+				</ul>
+			</li>
+			<li>
+				<div class="fbutton border">
+				<img class="icon" src="home.png"><a href="#">Type de logement</a><img class="expand" src="expand-button.png">
+				</div>
+   	 			<ul>
+					<select name="Logement" multiple>
+						<option value="choix">Choisissez le type de logement ci-dessous</option>				
+						<option value="ecologique">Logement possédant un label vert</option>						
+						<option value="Cabane">Cabane</option>
+						<option value="Tente">Tente</option>
+						<option value="Tipi">Tipi</option>
+						<option value="Yourte">Yourte</option>
+						<option value="Bulle transparente">Bulle transparente</option>
+						<option value="Phare">Phare</option>
+						<option value="Engin reconditionné">Engin reconditionné</option>
+						<option value="Roulotte">Roulotte</option>
+						<option value="Péniche">Péniche</option>
+						<option value="Maison flottante">Maison flottante</option>
+						<option value="Tente suspendue">Tente suspendue</option>
+						<option value="Cabane dans les arbres">Cabane dans les arbres</option>
+						<option value="Grotte">Grotte</option>
+						<option value="Igloo">Igloo</option>
+						<option value="Carrière">Carrière</option>
+						<option value="Cave">Cave</option>	
+						<option value="Eglise">Eglise</option>
+						<option value="Moulin">Moulin</option>
+						<option value="Château">Château</option>							
+					</select>
+   	 			</ul>
+			</li>
+			<li>
+				<div class="fbutton border">
+				<img class="icon" src="user.png"><a href="#">Nombre de personnes</a><img class="expand up" src="expand-button.png">
+				</div>
+				<ul><label>Adultes</label>
+					<select name="Adulte">
+						<option value="1">1</option>				
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5</option>
+						<option value="5+">5+</option>
+					</select><br>
+					<label>Enfants</label>
+					<select name="Enfant">
+						<option value="0">0</option>				
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5</option>
+					</select>	
+				</ul>
+			</li>
+			</div>
+			<div class="liste2">
+			<li>
+				<div class="fbutton calendrier">
+					<div class="ui calendar" id="arrivee">
+						<div class="ui input left icon" id="arrivee2">
+							<i class="calendar icon"></i>
+							<input type="text" placeholder="Arrivée" >
+						</div>
+					</div>
+				</div>	
+			</li>
+			<li>
+				<div class="fbutton calendrier">
+					<div class="ui calendar" id="depart">
+						<div class="ui input left icon" id="depart2">
+							<i class="calendar icon"></i>
+							<input type="text" placeholder="Départ">
+						</div>
+					</div>
+				</div>	
+			</li>
+		</ul>
+		<div class="barre-de-recherche">
+			 <input type="text" placeholder="Rechercher...">
+			 <button class="bouton-orange">Rechercher</button>
+		</div>
+	</div>
+</div>	
+<script>
+$('#arrivee').calendar({
+  type: 'date'
+});
+
+$('#depart').calendar({
+  type: 'date'
+});
+</script>
+	</body>
+</html>
